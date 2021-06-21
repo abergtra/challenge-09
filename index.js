@@ -76,7 +76,7 @@ const questions = [
             name: "emailAddress",
             message: "What is your email address?",
             validate: function(value) {
-                if (condition) {
+                if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value)) {
                     return true;
                 } else {
                     return "This email is not valid. Please check spelling and enter a valid address."
