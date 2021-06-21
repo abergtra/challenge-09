@@ -69,7 +69,7 @@ function generateMarkdown(data) {
   * [License](#-Installation)
   * [Contributing](#-Contributing)
   * [Tests](#-Tests)
-  * [Contact Information](#-Contact-Information)
+  * [Questions](#-Questions)
       
   # Installation
   ${data.installation}
@@ -86,7 +86,7 @@ function generateMarkdown(data) {
   # Tests
   ${data.tests}
   
-  # Contact Information 
+  # CQuestions
   * GitHub Username: ${data.GithubUsername}
   * Contact Email: ${data.emailAddress}
   
