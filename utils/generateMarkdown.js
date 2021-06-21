@@ -43,8 +43,7 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   renderLicense = renderLicenseLink(license);
   if (license != "") {
-    return `
-    ${renderLicense}
+    return `${renderLicense} 
     * As this list provided is not comprehensive, if you need another license, contact the author for additional options. 
     `;
   } else {
@@ -79,8 +78,7 @@ function generateMarkdown(data) {
   ${data.usage}
   
   # License 
-  ${data.license}
-  * As this license list was not comprehensive, if you need another license, use the contact information below to ask for license to be added. 
+  ${licenseSection}
   
   # Contributing 
   ${data.contributing}
@@ -89,8 +87,8 @@ function generateMarkdown(data) {
   ${data.tests}
   
   # Contact Information 
-  * GitHub Username: ${data.userName}
-  * Contact Email: ${data.userEmail}
+  * GitHub Username: ${data.GithubUsername}
+  * Contact Email: ${data.emailAddress}
   
 `;
 }
