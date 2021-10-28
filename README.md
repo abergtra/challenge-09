@@ -1,4 +1,4 @@
-# challenge-09
+# readme-generator
 # Description
 Auto-generate a professional README.md file from User Input using a command-line application, node.js, and the Inquirer package.
 
